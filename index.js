@@ -13,7 +13,19 @@ var button = buttons.ActionButton({
 });
 
 function handleClick(state) {
-  tabs.open("http://portal.natal.rn.gov.br/dom/index.php?p=c");
+  tabs.open({
+    url: "http://portal.natal.rn.gov.br/dom/index.php?p=c",
+    onReady: function(tab) {
+      tab.attach({
+        contentScriptFile: "./content-script.js",
+        contentScriptOptions: {
+          chave: "cuidador",
+          dtini: "01/08/2016",
+          dtfim: "21/08/2016"
+        }
+      });
+    }
+  });
 }
 
 var { Hotkey } = require("sdk/hotkeys");
