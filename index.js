@@ -15,3 +15,12 @@ var button = buttons.ActionButton({
 function handleClick(state) {
   tabs.open("http://portal.natal.rn.gov.br/dom/index.php?p=c");
 }
+
+var { Hotkey } = require("sdk/hotkeys");
+
+var donatalHotKey = Hotkey({
+  combo: "control-shift-d",
+  onPress: function() {
+    handleClick();  // state?
+  }
+});
