@@ -1,0 +1,15 @@
+{
+  "title": "Verificador do Diário Oficial de Natal ",
+  "name": "donatal",
+  "version": "0.0.1",
+  "description": "Um botão na Barra de Ferramentas do Firefox possibilita pesquisar rapidamente por uma palavra-chave no Diário Oficial do Município de Natal, RN. ",
+  "main": "index.js",
+  "author": "Alexandre Magno",
+  "engines": {
+    "firefox": ">=38.0a1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "jetpack"
+  ]
+}
