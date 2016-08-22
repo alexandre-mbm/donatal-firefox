@@ -1,6 +1,6 @@
 # Verificador do Diário Oficial de Natal
 
-Um botão na Barra de Ferramentas do Firefox possibilita pesquisar rapidamente por uma palavra-chave no Diário Oficial do Município de Natal, RN.
+Um botão na Barra de Ferramentas do Firefox, ou atalho customizável de teclado, possibilitam buscar rapidamente palavra-chave ou expressão no Diário Oficial do Município de Natal, capital do Rio Grande do Norte, um Estado brasileiro.
 
 ## Ambiente de desenvolvimento
 
