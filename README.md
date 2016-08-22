@@ -7,6 +7,8 @@ Um botão na Barra de Ferramentas do Firefox possibilita pesquisar rapidamente p
 **Instalação:**
 
 ```sh
+$ sudo pacman -S npm
+$ sudo npm install jpm --global
 $ yaourt -S firefox-developer
 ```
 
@@ -20,4 +22,9 @@ $ export JPM_FIREFOX_BINARY=/usr/bin/firefox-developer
 
 ```sh
 $ jpm run
+```
+
+**Empacotamento:**
+```sh
+$ jpm sign --api-key ***************** --api-secret ****************************************************************
 ```
