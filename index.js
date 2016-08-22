@@ -68,7 +68,7 @@ function handleClick(state) {
 var { Hotkey } = require("sdk/hotkeys");
 
 var donatalHotKey = Hotkey({
-  combo: "control-shift-d",
+  combo: require("sdk/simple-prefs").prefs["shortcut"],
   onPress: function() {
     handleClick();  // state?
   }
