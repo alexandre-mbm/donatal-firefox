@@ -1,4 +1,8 @@
-var buttons = require('sdk/ui/button/action');
+var chave = require("sdk/simple-prefs").prefs["keyword"];
+var dtini = new Date(Date.now()-require("sdk/simple-prefs").prefs["days"]*24*60*60*1000).toLocaleDateString("en-GB");
+var dtfim = new Date().toLocaleDateString("en-GB");
+
+var buttons = require("sdk/ui/button/action");
 
 var button = buttons.ActionButton({
   id: "donatal-link",
@@ -39,7 +43,7 @@ var utils = require("sdk/tabs/utils");
 function handleClick(state) {
   var xulActiveTab = viewFor(tabs.activeTab);
   var tabBrowser = utils.getTabBrowserForTab(xulActiveTab);
-  var postData = aPostDataFor("chave=cuidador&dtini=01/08/2016&dtfim=21/08/2016&list=Listar");
+  var postData = aPostDataFor("chave="+chave+"&dtini="+dtini+"&dtfim="+dtfim+"&list=Listar");
   var xulTab = tabBrowser.addTab(
       "http://portal.natal.rn.gov.br/dom/index.php?p=c",
       null,
@@ -48,14 +52,16 @@ function handleClick(state) {
   );
   // fast enough it goes to next step, or not?
   tabs.on("ready", function(tab) {
-    tab.attach({
-      contentScriptFile: "./content-script.js",
-      contentScriptOptions: {
-      chave: "cuidador",
-      dtini: "01/08/2016",
-      dtfim: "21/08/2016"
-      }
-    });
+    if (viewFor(tab) == xulTab)
+      tab.attach({
+        contentScriptFile: "./content-script.js",
+        contentScriptOptions: {
+        chave: chave,
+        dtini: dtini,
+        dtfim: dtfim
+        }
+      });
+      tab.activate();
   });
 }
 

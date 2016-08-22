@@ -11,5 +11,19 @@
   "license": "MIT",
   "keywords": [
     "jetpack"
-  ]
+  ],
+  "preferences": [{
+    "type": "string",
+    "name": "keyword",
+    "value": "cuidador",
+    "title": "Chave de pesquisa",
+    "description": "Qual é a palavra ou expressão a procurar?"
+  },
+  {
+    "type": "integer",
+    "name": "days",
+    "value": 15,
+    "title": "Intervalo de dias",
+    "description": "Quantos dias para trás importarão na consulta?"
+  }]
 }
