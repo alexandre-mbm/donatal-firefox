@@ -1,7 +1,8 @@
 {
   "title": "Verificador do Diário Oficial de Natal ",
   "name": "donatal",
-  "version": "0.2.1",
+  "version": "0.2.2",
+  "homepage": "https://github.com/alexandre-mbm/donatal-firefox",
   "description": "Um botão na Barra de Ferramentas do Firefox, ou atalho customizável de teclado, possibilitam buscar rapidamente palavra-chave ou expressão no Diário Oficial do Município de Natal, capital do Rio Grande do Norte, um Estado brasileiro.",
   "main": "index.js",
   "author": "Alexandre Magno <alexandre.mbm@gmail.com>",
