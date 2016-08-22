@@ -5,14 +5,14 @@
             <Seq>
                 <li>
                     <Description>
-                          <em:version>0.1.4</em:version>
+                          <em:version>0.1.5</em:version>
 
                           <em:targetApplication>
                             <Description>
                               <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
                               <em:minVersion>38.0a1</em:minVersion>
                               <em:maxVersion>*</em:maxVersion>
-                              <em:updateLink>https://github.com/alexandre-mbm/donatal-firefox/releases/download/0.1.4/verificador_do_diario_oficial_de_natal-0.1.4-fx.xpi</em:updateLink>
+                              <em:updateLink>https://github.com/alexandre-mbm/donatal-firefox/releases/download/0.1.5/verificador_do_diario_oficial_de_natal-0.1.5-fx.xpi</em:updateLink>
 </Description>
 </em:targetApplication>
 
