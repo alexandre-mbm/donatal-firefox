@@ -16,6 +16,9 @@ $ yaourt -S firefox-developer
 
 ```sh
 $ export JPM_FIREFOX_BINARY=/usr/bin/firefox-developer
+$ export JPM_API_KEY=*****************
+$ export JPM_API_SECRET=****************************************************************
+
 ```
 
 **Teste:**
@@ -26,5 +29,8 @@ $ jpm run
 
 **Empacotamento:**
 ```sh
-$ jpm sign --api-key ***************** --api-secret ****************************************************************
+$ git status
+$ git diff
+$ git commit
+$ ./release.sh VERSÃO "MENSAGEM"
 ```
