@@ -15,10 +15,7 @@ $ yaourt -S firefox-developer
 **Ativação:**
 
 ```sh
-$ export JPM_FIREFOX_BINARY=/usr/bin/firefox-developer
-$ export JPM_API_KEY=*****************
-$ export JPM_API_SECRET=****************************************************************
-
+$ ./init.sh  # lembre-se de adequá-lo em segredo
 ```
 
 **Teste:**
