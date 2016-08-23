@@ -52,16 +52,17 @@ function handleClick(state) {
   );
   // fast enough it goes to next step, or not?
   tabs.on("ready", function(tab) {
-    if (viewFor(tab) == xulTab)
+    if (viewFor(tab) == xulTab) {
       tab.attach({
         contentScriptFile: "./content-script.js",
         contentScriptOptions: {
-        chave: chave,
-        dtini: dtini,
-        dtfim: dtfim
+          chave: chave,
+          dtini: dtini,
+          dtfim: dtfim
         }
       });
       tab.activate();
+    }
   });
 }
 
