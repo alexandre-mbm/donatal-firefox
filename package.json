@@ -36,5 +36,5 @@
   }],
   "icon": "resource://donatal/data/icon-64.png",
   "updateURL": "https://raw.githubusercontent.com/alexandre-mbm/donatal-firefox/master/update.rdf",
-  "updateLink": "https://github.com/alexandre-mbm/donatal-firefox/releases/download/0.2.0/verificador_do_diario_oficial_de_natal-0.2.0-fx.xpi"
+  "updateLink": "https://github.com/alexandre-mbm/donatal-firefox/releases/download/0.2.3/verificador_do_diario_oficial_de_natal-0.2.3-fx.xpi"
 }
