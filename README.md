@@ -15,6 +15,7 @@ $ yaourt -S firefox-developer
 **Ativação:**
 
 ```sh
+$ git update-index --assume-unchanged init.sh
 $ ./init.sh  # lembre-se de adequá-lo em segredo
 ```
 
